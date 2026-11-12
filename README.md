@@ -22,19 +22,23 @@ $ uname -a
 MINGW64_NT-10.0-26300 GNIA-C202-B01 3.6.10-5a1665c8.x86_64 2026-09-28 10:40 UTC x86_64 Msys
 
 $ docker --version
-Docker version 29.9.2, build a82e528
+Docker version 29.9.3, build a82e528
 
 $ git --version
 git version 2.56.0.windows.4
+
+
+```
 $ ./permission_test.sh
-3. 파일 권한 실습
+```
+## 3. 파일 권한 실습
 
 권한 실습 성공
 
 $ chmod 644 permission_test.sh
 
 $ ls -l permission_test.sh
--rwxr-xr-x 1 dabin52171136 1049089 48 Nov 9 12:41 permission_test.sh*
+- rw-r--r-- 1 dabin52171136 1049089 48 Nov 9 12:41 permission_test.sh*
 
 $ chmod 755 permission_test.sh
 
@@ -99,8 +103,8 @@ CMD ["nginx", "-g", "daemon off;"]
 </head>
 <body>
     <div class="container">
-        <h1>🚀 개발자 작업실</h1>
-        <p>Docker를 활용한 커스텀 개발 환경이 준비되었습니다!</p>
+        <h1>🚀 개발자 작업실</h1> 
+   <p>Docker를 활용한 커스텀 개발 환경이 준비되었습니다!</p>
         <p>✅ Dockerfile 기반 이미지 빌드 완료</p>
         <p>✅ 커스텀 nginx 컨테이너 실행 중</p>
     </div>
